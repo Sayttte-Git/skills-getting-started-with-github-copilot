@@ -103,6 +103,9 @@ section h3 {
   color: #333;
   font-size: 14px;
   transition: all 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .activity-participants li:hover {
@@ -113,6 +116,28 @@ section h3 {
 
 .activity-participants li:last-child {
   margin-bottom: 0;
+}
+
+.participant-email {
+  flex: 1;
+}
+
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 8px;
+  margin-left: 10px;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+  opacity: 0.6;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+  background-color: #ffebee;
+  transform: scale(1.2);
 }
 
 .no-participants {
